@@ -103,6 +103,17 @@ export default function App() {
   return (
     <div className="p-4 max-w-2xl mx-auto">
       <h1 className="text-2xl font-bold mb-4">Weight Loss Diary DApp</h1>
+     
+      {!account ? (
+      <button
+        onClick={connectWallet}
+        className="px-4 py-2 bg-green-600 text-white rounded mb-4"
+      >
+        Подключить MetaMask
+      </button>
+    ) : (
+      <p className="mb-4 text-sm text-gray-600">Подключено: {account}</p>
+    )}
 
       <div className="mb-6 space-y-2">
         <input className="w-full p-2 border rounded" placeholder="Weight (kg)" name="weightKg" value={formData.weightKg} onChange={handleChange} />
