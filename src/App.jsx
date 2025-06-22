@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { ethers } from "ethers";
 
 // ⬇️ ВСТАВЬ СЮДА АДРЕС СВОЕГО КОНТРАКТА
-const contractAddress = "0xYourBaseContractAddressHere";
+const contractAddress = "0xDe65B2b24558Ef18B923D31E9E6be966b9e3b0Bd";
 
 // ⬇️ ABI ТВОЕГО КОНТРАКТА
 const abi = [
